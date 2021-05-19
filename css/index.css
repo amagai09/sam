@@ -1,0 +1,14 @@
+p{
+    color: aqua;
+}
+/*ｐはセレクタ、color プロパティ、aquaは値*/
+
+h1{
+    font-size:50pt;
+    font-weight:bold;
+    color:burlywood
+}
+span{
+    color: yellow;
+    font-weight: bold;
+}
