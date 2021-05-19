@@ -1,14 +1,17 @@
-p{
+p.sub-title1{
     color: aqua;
 }
 /*ｐはセレクタ、color プロパティ、aquaは値*/
-
+p#sub-title2{
+    color: green;
+}
 h1{
     font-size:50pt;
     font-weight:bold;
     color:burlywood
 }
-span{
+.kashi{
     color: yellow;
     font-weight: bold;
+    font-size: larger;
 }
