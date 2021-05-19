@@ -4,6 +4,8 @@ p.sub-title1{
 /*ｐはセレクタ、color プロパティ、aquaは値*/
 p#sub-title2{
     color: green;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h1{
     font-size:50pt;
@@ -14,4 +16,20 @@ h1{
     color: yellow;
     font-weight: bold;
     font-size: larger;
+}
+
+div.box1{
+    height: 100px;
+    width: 300px;
+    background-color: hotpink;
+    
+}
+div.box2{
+    height: 100px;
+    width: 200px;
+    background-color: gold;
+}div.box3{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
 }
