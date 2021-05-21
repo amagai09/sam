@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-compatile" content="ie=edge">
+        <title>ボックス練習</title>
+        <style type="text/css">
+        body{
+            padding: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #f7f7f7;/*ウェブカラーを検索*/
+        }
+        h1{
+            margin: 5px;
+        }
+        div.header{
+            background-image: url("img/Ao no Kanata no Four Rhythm3-22.jpg");
+            /*imgファイルの中の画像を仕様*/
+            height: 225px;
+            width: auto;
+        }
+        div.title{
+            background-color: green;
+            height: 40px;       /*boxの高さ*/
+            line-height: 40px;  /*中身（文字）の高さを揃える*/
+            width: auto;
+            color: ivory;
+            font-size: 20px;
+            display: flex;              /*フレキシブルボックス*/
+                                        /*要素の指定の回り込みの方法*/
+                                        /*並列レイアウトを可能にする、配置設定方法*/
+            justify-content: center;    /*x軸を中央揃え*/
+        }
+</style>
+    </head>
+    <body>
+        <h1>ボックスモデルの練習</h1>
+        <div class="header">
+            <div class="title">
+                ECOLOGY
+            </div>
+        </div>
+        <p class="con">
+            鳴らない言葉をもう一度描いて　赤色に染まる時間を置き去れば　
+        </p>
+    </body>
+    </html>>
