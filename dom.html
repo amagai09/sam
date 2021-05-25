@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta tharset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-compatile" content="ie=edge">
+        <title>DOM操作の基本</title>
+    </head>
+
+<body>
+    <h1>楽しいじゃば</h1>
+    <p id="t">こんにちはこんにちは</p>
+    <p>こんにちはこんにちは</p>
+    <p>こんにちはこんにちは</p>
+    <script>
+        'use strict';
+        const textchange=()=>{
+            document.querySelector('h1').textContent="changed";//HTMLのコード自体を書き換えているわけではない
+           // document.querySelector('#t').textContent="changed";
+            document.getElementById('t').textContent="changed";
+            document.querySelector('p').textContent="changed";
+            //querySelector:指定したセレクタの一番最初に見つかったところのみ
+            document.querySelectorALL('p').textContent="changed";
+
+        }
+        setTimeout(textchange,1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta tharset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-compatile" content="ie=edge">
+        <title>関数とクラス</title>
+    </head>
+
+<body>
+    <script>
+        'use strict';
+//アロー関数
+//（）＝＞（）
+        // const addtwonum = (x,y)　=>{
+        //     return x+y;
+        // };
+        // console.log(addtwonum(3,4));
+
+//クラス
+//モノの設計図である、現実のものを扱うように構成していく手法。
+    //     class calucuator{
+    //         constructor(x,y){
+    //             this.x=x;
+    //             this.y=y;
+    //         }
+    //         //メソッド
+    //         addtwonum(){
+    //             return this.x +this.y;
+    //         }
+    //     }
+
+    //     const calcA = new calucuator(3,4);//インスタンスの生成
+    //     const calcB = new calucuator(99,4);
+    //     console.log(calcA.addtwonum());
+    //     console.log(calcB.addtwonum());
+    //     /*addtwonum に引数を渡していない。オブジェクトが破棄されるまで定義された数字は保持される*/
+    //     /*引数を入力しても、インスタンス生成時の機能から変更されない*/
+    // 
+    //      class supernaming{
+    //         constructor(){
+    //             this.name= "田中";
+    //         }
+    //         //メソッド
+    //         outputname(){
+    //             return this.name;
+    //         }
+    //     }
+    //     class subgreeting extends supernaming{
+    //         outputname(){
+    //             return super.outputname()+"太朗";
+    //         }
+    //         outputhello(){
+    //             return "hello!";
+    //         }
+    //     }
+    //     const greeting = new subgreeting;
+    //     console.log(greeting.outputhello()+greeting.outputname());
+    // //練習問題
+    class naming {
+        constructor(x){
+            this.name=["山田","田中","林",x];
+        }
+        result(i){
+            return this.name[i];
+        }
+    }
+    const outputnaming=new naming("佐藤");
+    for(let i=0;i<outputnaming.name.length;i++){
+        console.log(`${i+1}.${outputnaming.result(i)}`);
+    }
+    </script>
+</body>
+</html>
