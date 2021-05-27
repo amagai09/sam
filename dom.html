@@ -8,22 +8,27 @@
     </head>
 
 <body>
+    <button id="textcg">テキスト変更</button>
+
     <h1>楽しいじゃば</h1>
     <p id="t">こんにちはこんにちは</p>
     <p>こんにちはこんにちは</p>
     <p>こんにちはこんにちは</p>
     <script>
         'use strict';
-        const textchange=()=>{
-            document.querySelector('h1').textContent="changed";//HTMLのコード自体を書き換えているわけではない
-           // document.querySelector('#t').textContent="changed";
-            document.getElementById('t').textContent="changed";
-            document.querySelector('p').textContent="changed";
-            //querySelector:指定したセレクタの一番最初に見つかったところのみ
-            document.querySelectorALL('p').textContent="changed";
+        // const textchange=()=>{
+        //     document.querySelector('h1').textContent="changed";//HTMLのコード自体を書き換えているわけではない
+        //    // document.querySelector('#t').textContent="changed";
+        //     document.getElementById('t').textContent="changed";
+        //     document.querySelector('p').textContent="changed";
+        //     //querySelector:指定したセレクタの一番最初に見つかったところのみ
+        //     document.querySelectorALL('p').textContent="changed";
+        // }
+        // setTimeout(textchange,1000);
 
-        }
-        setTimeout(textchange,1000);
+        document.getElementById('textcg').addEventListener('click',()=>{
+        document.getElementById('t').textContent="chaged"})
+        ;
     </script>
 </body>
 </html>
